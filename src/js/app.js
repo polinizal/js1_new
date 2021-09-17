@@ -9,4 +9,15 @@ window.addEventListener("DOMContentLoaded", () => {
     { job: "programmer", class: "is-danger" },
   ];
   const articles = document.querySelectorAll("article");
+
+  const R = require('ramda'); 
+articles = R.pluck('arrayToPluck') 
+articles([{ name: "John", class: "is-primary" }, 
+{ age: 23, class: "is-warning" }, 
+{ job: "programmer", class: "is-danger" }]); 
+
+ 
+  
+
+
 });
